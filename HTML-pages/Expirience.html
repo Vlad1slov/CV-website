@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My working expirience</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/image/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/image/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/image/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/manifest/site.webmanifest" />
+        <style>
+            .gallery {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .image {
+                position: relative;
+                width: 48%;
+                overflow: hidden;
+            }
+
+            .image img {
+                width: 100%;
+                height: auto;
+                transition: transform 0.3s;
+            }
+            .image:hover img {
+                transform: scale(1.1);
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .image:hover .overlay {
+                opacity: 1;
+            }
+
+            .text {
+                color: white;
+                font-size: 16px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand p-0" href="/HTML-pages/index.html">
+                    <img src="/image/V (1).png" alt="Logo" width="45" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                aria-current="page"
+                                href="/HTML-pages/index.html"
+                                >Me</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                href="/HTML-pages/Expirience.html"
+                                >Working expirience</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/HTML-pages/Hobbies.html"
+                                >Hobbies</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="gallery">
+            <div class="image my-5">
+                <a href="https://logity.ua/ru/" target="_blank">
+                    <img src="/image/logity-photo.jpg" alt="Фото 1" />
+                    <div class="overlay">
+                        <div class="text">On going since November 2021</div>
+                    </div>
+                </a>
+            </div>
+            <div class="image my-5">
+                <a href="https://novaposhta.ua/" target="_blank">
+                    <img
+                        src="https://bi.ua//uploaded-images/products/461833_1.jpg"
+                        alt="Фото 2"
+                    />
+                    <div class="overlay">
+                        <div class="text">November 2020 – October 2021</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
